@@ -1,0 +1,85 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.2.7 Chrome/138.0.7204.251 Electron/37.7.1 Safari/537.36" version="28.2.7">
+  <diagram name="TMS.BFF" id="Lrii1pluRwjRMbgc6Rr4">
+    <mxGraphModel dx="1403" dy="572" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-1" value="TMS.BFF" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="35" y="37.5" width="260" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-5" value="TMS.&lt;div&gt;Infrastructure&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="67.5" y="70" width="195" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-4" value="TMS.Core" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="107.5" y="110" width="115" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-7" value="TMS.BFF.exe" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="400" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="lyZsorq5HYYQ4Z9RTSFq-8" target="lyZsorq5HYYQ4Z9RTSFq-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="lyZsorq5HYYQ4Z9RTSFq-8" target="lyZsorq5HYYQ4Z9RTSFq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-8" value="TMS.BFF.Core.dll" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="400" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="lyZsorq5HYYQ4Z9RTSFq-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="650" y="180" />
+              <mxPoint x="460" y="180" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-11" value="TMS.BFF.&lt;div&gt;Infrastruture.dll&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="590" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="lyZsorq5HYYQ4Z9RTSFq-15" target="lyZsorq5HYYQ4Z9RTSFq-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-15" value="TicketsController" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="80" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-19" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=classic;startFill=1;" edge="1" parent="1" source="lyZsorq5HYYQ4Z9RTSFq-16" target="lyZsorq5HYYQ4Z9RTSFq-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-16" value="TicketsService:&lt;div&gt;ITicketsService&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="280" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-21" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;" edge="1" parent="1" source="lyZsorq5HYYQ4Z9RTSFq-20" target="lyZsorq5HYYQ4Z9RTSFq-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-18" value="TicketRepository:&lt;div&gt;I&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Repository&lt;/span&gt;&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="480" y="400" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-20" value="CachedDbAdapter:&lt;div&gt;IRepositoryAdpater&lt;/div&gt;" style="whiteSpace=wrap;html=1;rounded=0;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="480" y="510" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="lyZsorq5HYYQ4Z9RTSFq-22" target="lyZsorq5HYYQ4Z9RTSFq-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="lyZsorq5HYYQ4Z9RTSFq-22" target="lyZsorq5HYYQ4Z9RTSFq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-22" value="Repository.Core.dll" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="827" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="lyZsorq5HYYQ4Z9RTSFq-23" target="lyZsorq5HYYQ4Z9RTSFq-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-23" value="Repository.&lt;div&gt;Infrastructure.dll&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="827" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-29" value="Repository.&lt;div&gt;Infrastructure.dll&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="1040" y="37.5" width="195" height="195" as="geometry" />
+        </mxCell>
+        <mxCell id="lyZsorq5HYYQ4Z9RTSFq-30" value="Repository.&lt;div&gt;Core.dll&lt;/div&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;verticalAlign=top;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="1080" y="77.5" width="115" height="115" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

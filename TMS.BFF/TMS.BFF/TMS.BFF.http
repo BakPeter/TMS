@@ -1,0 +1,6 @@
+@TMS.BFF_HostAddress = http://localhost:5093
+
+GET {{TMS.BFF_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
