@@ -1,11 +1,17 @@
-﻿namespace Repository.Core.Types;
+﻿using System.Text.Json;
+
+namespace Repository.Core.Types;
 
 public class InValidEntityException : Exception
 {
-    public IEnumerable<string> ValidationErrors { get; }
 
-    public InValidEntityException(IEnumerable<string> validationErrors)
+    public InValidEntityException(IEnumerable<string> validationErrors) :
+        base($"Validation Errors: {JsonSerializer.Serialize(validationErrors)}")
     {
-        ValidationErrors = validationErrors;
+    }
+
+    public InValidEntityException(IEnumerable<string> validationErrors, Exception innerException) :
+        base($"Validation Errors: {JsonSerializer.Serialize(validationErrors)}", innerException)
+    {
     }
 }

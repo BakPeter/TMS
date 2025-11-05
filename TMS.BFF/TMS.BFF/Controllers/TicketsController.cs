@@ -28,8 +28,7 @@ public class TicketsController : ControllerBase
         }
         catch (Exception e)
         {
-            _logger.LogError(e.Message);
-            return StatusCode(500, $"Internal server error: {e.Message}");
+            return ErrorHandler(e);
         }
     }
 
@@ -44,10 +43,10 @@ public class TicketsController : ControllerBase
         }
         catch (Exception e)
         {
-            _logger.LogError(e.Message);
-            return StatusCode(500, $"Internal server error: {e.Message}");
+            return ErrorHandler(e);
         }
     }
+    
 
     [HttpPut]
     public async Task<ActionResult<Ticket>> UpdateTicketState([FromBody] UpdateStateTicketDto updateStateTicketDto)
@@ -60,8 +59,20 @@ public class TicketsController : ControllerBase
         }
         catch (Exception e)
         {
-            _logger.LogError(e.Message);
-            return StatusCode(500, $"Internal server error: {e.Message}");
+            return ErrorHandler(e);
         }
+    }
+
+    private ActionResult ErrorHandler(Exception error)
+    {
+        _logger.LogError(error.Message);
+
+        var problem = new ProblemDetails
+        {
+            Status = StatusCodes.Status500InternalServerError,
+            Title = "Bad Request",
+            Detail = error.Message,
+        };
+        return BadRequest(problem);
     }
 }

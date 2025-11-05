@@ -6,6 +6,7 @@ using TMS.Core.Interfaces;
 using TMS.Core.Types;
 using TMS.Infrastructure.Interfaces;
 using TMS.Infrastructure.Services;
+using TMS.Infrastructure.Services.Validators;
 
 namespace TMS.Infrastructure.Ioc;
 
@@ -16,8 +17,8 @@ public static class ServiceCollectionExtension
         services.AddRepositoryServices<Ticket>();
 
         services.AddSingleton<IRepositoryAdapter<Ticket>, CachedEntityRepositoryAdapter>();
-        services.AddTransient<IEntityValidation<Ticket>, TicketValidation>();
         services.AddTransient<ITicketService, TicketService>();
+        services.AddTransient<IEntityValidator<Ticket>, TicketSubjectValidator>();
         services.AddSingleton<IIdGenerator, IdGenerator>();
 
         return services;
