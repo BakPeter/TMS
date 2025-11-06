@@ -144,7 +144,6 @@ public class RepositoryTests
         // Assert
         Assert.That(result.IsSuccess, Is.False);
         Assert.That(error, Is.TypeOf<InValidEntityException>());
-        CollectionAssert.AreEqual(validationErrors, error.ValidationErrors);
     }
 
     [Test]

@@ -1,0 +1,22 @@
+<table class="table table-striped table-hover">
+  <!-- <thead class="table-dark">
+    <tr>
+      <th>ID</th>
+      <th>Subject</th>
+      <th>Description</th>
+      <th>State</th>
+      <th>Action</th>
+    </tr>
+  </thead> -->
+  <tbody>
+    @for (currTicket of tickets; track $index) {
+    <tr>
+      <app-ticket-viewer
+        [serialNumber]="$index"
+        [ticket]="currTicket"
+        (ticketStateChanged)="onTicketStateChanged(currTicket)"
+      ></app-ticket-viewer>
+    </tr>
+    }
+  </tbody>
+</table>
