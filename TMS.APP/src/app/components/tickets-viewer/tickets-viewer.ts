@@ -34,12 +34,13 @@ export class TicketsViewer implements OnInit {
 
   onTicketStateChanged(ticket: Ticket) {
     debugger;
-    const newState: TicketState =
-      ticket.state === TicketState.Closed ? TicketState.Open : TicketState.Closed;
-    const updateTicketDto: UpdateTicketStateDto = new UpdateTicketStateDto(
-      ticket.ticketId,
-      newState
-    );
+    // const newState: TicketState =
+    //   ticket.state === TicketState.Closed ? TicketState.Open : TicketState.Closed;
+    // const updateTicketDto: UpdateTicketStateDto = new UpdateTicketStateDto(
+    //   ticket.ticketId,
+    //   newState
+    // );
+    const updateTicketDto: UpdateTicketStateDto = new UpdateTicketStateDto(ticket.ticketId);
     this.service.updateTicketState(updateTicketDto).subscribe(
       (ticket: Ticket) => {
         this.loadTickets();

@@ -35,6 +35,10 @@ public class TicketService : ITicketService
     {
         return await _repository.UpdateFieldAsync(
             updateStateTicketDto.TicketId,
-            ticket => ticket with { State = updateStateTicketDto.NewState });
+            ticket =>
+            {
+                if (ticket.State == TicketState.Open) return ticket with { State = TicketState.Closed};
+                return ticket with { State = TicketState.Open };
+            });
     }
 }

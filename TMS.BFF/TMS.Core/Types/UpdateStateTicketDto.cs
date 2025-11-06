@@ -1,3 +1,3 @@
 ﻿namespace TMS.Core.Types;
 
-public record UpdateStateTicketDto(int TicketId, TicketState NewState);
+public record UpdateStateTicketDto(int TicketId);
