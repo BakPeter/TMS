@@ -46,7 +46,6 @@ public class TicketsController : ControllerBase
             return ErrorHandler(e);
         }
     }
-    
 
     [HttpPut]
     public async Task<ActionResult<Ticket>> UpdateTicketState([FromBody] UpdateStateTicketDto updateStateTicketDto)
